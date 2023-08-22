@@ -1,10 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GO-OU Map</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: crimson;
+            color: #FFFDD0;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        #map-section {
+            width: 100%;
+            height: 500px;
+            background-color: white;
+            text-align: center;
+            line-height: 500px; /*map placeholder*/
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
+
 <body>
+    <!-- Header -->
+    <header>
+        <h1>GO-OU</h1>
+        <p>Text Insert Here</p>
+    </header>
+
+    <!-- Map -->
+    <section id="map-section">
+        [embed Map here]
+    </section>
+
+    <!-- About -->
+    <section class="container" id="about-section">
+        <h2>About GO-OU</h2>
+        <p>Map of OU. To help people navigate in OU. CART system, buildings, classes, offices, cool spots, things to do, and even trash cans.</p>
+    </section>
+
+    <!-- User Feedback -->
+    <section class="container" id="feedback-section">
+        <h2>Feedback</h2>
+        <p>Providing your opinions and trip experience helps us improve your future journey with GO-OU!</p>
+        <form action="/submit-feedback" method="POST">
+            <label>
+                <textarea name="feedback" rows="5" cols="20" placeholder="Share your thoughts on using GO-OU"></textarea>
+            </label><br>
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: crimson; color: #FFFDD0; text-align: center; padding: 1em 0;">
+        <p>&#x1f12f; 2023 [Kyumin Lee and Aaron Hamil]. This work is licensed under a copyleft license. You may use, modify, and distribute this work, provided any derivatives also grant copyleft freedoms.</p>
+    </footer>
     <script src="app.js"></script>
 </body>
 </html>
